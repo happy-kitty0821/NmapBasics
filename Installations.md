@@ -4,6 +4,6 @@
 
 **For Distros which uses apt, pacman as a package manager**
  - *Arch*[ArchLinux] (https://linuxiac.b-cdn.net/wp-content/uploads/2020/06/archlinux.jpg)
- - **Installation** > '''bash 
+ - **Installation**  '''bash 
  sudo pacman -S nmap
- ''' 
+ 
