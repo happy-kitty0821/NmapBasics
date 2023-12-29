@@ -48,3 +48,7 @@ While Nmap is a powerful tool, it's essential to use it responsibly and ethicall
  - *Arch*[ArchLinux](https://linuxiac.b-cdn.net/wp-content/uploads/2020/06/archlinux.jpg)
  - **Installation**  '*sudo pacman -S nmap*'
  'code'
+
+ ```python
+def example():
+    print("Hello, GitHub!")
