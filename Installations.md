@@ -47,8 +47,18 @@ While Nmap is a powerful tool, it's essential to use it responsibly and ethicall
 
 **For Distros which uses apt, pacman as a package manager**
  - *Arch*[ArchLinux](https://linuxiac.b-cdn.net/wp-content/uploads/2020/06/archlinux.jpg)
- - **Installation**  '*sudo pacman -S nmap*'
- 
-
+ - **Installation:** 
  ```bash
-sudo pacman -S nmap 
+    sudo pacman -Syu 
+``` 
+ ```bash
+    sudo pacman -S nmap 
+```
+ - *Debian* 
+ - **Installation:**
+ ```bash
+    sudo apt update -y 
+ ```
+ ```bash
+    sudo apt install -y nmap
+ ```
