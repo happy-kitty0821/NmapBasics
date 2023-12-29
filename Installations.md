@@ -1,24 +1,21 @@
 **nmap for dummies by @happy-kitty0821 on github**
-```
+
 ### Nmap, short for "Network Mapper," is a powerful open-source network scanning tool widely used for network discovery and security auditing. Developed by Gordon Lyon, also known as Fyodor, Nmap is designed to explore networks, discover hosts, and identify open ports and services running on them. It supports a variety of scanning techniques, including ping scanning, port scanning, version detection, and OS fingerprinting. Nmap is a valuable tool for network administrators, security professionals, and ethical hackers, providing essential insights into network configurations and potential vulnerabilities. Its versatility and extensive feature set make it a popular choice for both simple network reconnaissance and in-depth security assessments.
-```
+
 ### Who should use nmap 🫣🤐🫥??? 
 
 ### Nmap is a versatile and powerful network scanning tool, and it can be beneficial for various individuals and roles within the realm of information technology and cybersecurity. Here are some groups of people who might find Nmap useful:
 
-```
 **1. Network Administrators:**
-```
+
 Network administrators can use Nmap to discover devices on their networks, identify open ports, and ensure proper network configurations.
 
-```
 **2. Security Professionals:**
-```
+
 Security analysts and penetration testers leverage Nmap to assess the security posture of networks, identify potential vulnerabilities, and perform penetration testing.
 
-```
 **3. System Administrators:**
-```
+
 System administrators can use Nmap to troubleshoot network issues, check the status of services, and ensure the security of their systems.
 
 **4. Ethical Hackers:**
