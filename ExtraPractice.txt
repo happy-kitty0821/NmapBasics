@@ -1,0 +1,115 @@
+SQL> create table Product(productId number(10) not null primary key, productDescription varchar(20), unitPrice number(10));
+
+Table created.
+
+SQL> create table Customer(customerID int not null primary key, Name varchar(20),  
+  2  Address varchar(20), contact number(15));
+
+Table created.
+
+create table OrderLine (
+    productId number(10),
+  3      customerID int,
+  4      Quantity int,
+  5      totalPrice int,
+  6      OrderDate date,
+    foreign key(productId) references Product(ProductId),
+    foreign key(customerID) references Customer(customerID),
+    primary key(productId, customerID)
+ 10  );
+
+Table created.
+
+SQL> 
+
+SQL> commit;
+
+Commit complete.
+
+SQL> insert all
+  into product values (1001, 'Football Boot', 1000)
+  into product values (1122, 'Football', 399)
+  into product values (112, 'Football Kit', 7000)
+  into product values (11, 'Cisco Router', 200000)
+  into product values (3002, 'Basket Ball', 200)
+  into product values (3012, 'Basket Ball Shoes', 150)
+select * from dual;
+
+6 rows created.
+
+SQL> select * from product;
+
+ PRODUCTID PRODUCTDESCRIPTION	 UNITPRICE
+---------- -------------------- ----------
+      1001 Football Boot	      1000
+      1122 Football		       399
+       112 Football Kit 	      7000
+	11 Cisco Router 	    200000
+      3002 Basket Ball		       200
+      3012 Basket Ball Shoes	       150
+
+6 rows selected.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> insert all
+  2  into customer values(1010, 'Aayush Wanem', 'Dharan-10', 9810000000)
+  3  into customer values(100, 'Ashish Limbu', 'Itahari-2', 9012444400)
+  4  into customer values(1111, 'Hari Rai', 'Damak-1', 9770112233)
+  5  into customer values(1234, 'Kp Oli Baa', 'NetaArea-99', 9801121233) 
+  6  into customer values(1000, 'Prachanda PM', 'NetaArea-99', 9812345678)
+  7  into customer values(2211, 'Harka Sampang', 'Dharan-16', 9869696969)
+  8  into customer values(1515, 'Sher Bahadur Deuba', 'NetaArea-69', 6969696969)
+  9  select * from dual;
+
+SQL> 
+SQL> select * from customer;
+
+CUSTOMERID NAME 			ADDRESS 		CONTACT
+---------- -------------------- -------------------- ----------
+      1010 Aayush Wanem 	Dharan-10	     9810000000
+       100 Ashish Limbu 	Itahari-2	     9012444400
+      1111 Hari Rai			Damak-1 	     9770112233
+      1234 Kp Oli Baa		NetaArea-99	     9801121233
+      1000 Prachanda PM 	NetaArea-99	     9812345678
+      2211 Harka Sampang	Dharan-16	     9869696969
+      1515 Sher Bahadur Deuba	NetaArea-69	     6969696969
+
+7 rows selected.
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+
+
+SQL>   
+SQL> insert all
+  2  into orderline values(3002, 1515, 10, 2000, '21-Jun-23')
+  3  into orderline values(1001, 1010, 2, 2000, '10-Jan-22')
+  4  into orderline values(1122, 1010, 2, 798, '5-Feb-22' )
+	into orderline values(3012, 2211, 4, 600, '29-Oct-23')
+    into orderline values(112, 1515, 2, 14000, '17-Dec-22')
+
+  5  select * from dual;
+
+SQL> 
+SQL> commit;
+
+Commit complete.
+
+SQL> select * from OrderLine;
+
+ PRODUCTID CUSTOMERID	QUANTITY TOTALPRICE ORDERDATE
+---------- ---------- ---------- ---------- ---------
+      1001	 1010	       2       2000 10-JAN-22
+      1122	 1010	       2	798 05-FEB-22
+      3002	 1515	      10       2000 21-JUN-23
+
+SQL> 
+s
